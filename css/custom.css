@@ -36,7 +36,7 @@ body {
   right: 0;
   left: 0;
   z-index: 1030;
-  background: transparent !important;
+  background: rgba(39,39,39,.7)!important;
 }
 
 .fixed-top.scrolled {
@@ -258,6 +258,15 @@ a:visited {
   text-align: center;
 }
 
+#section-5{
+  background-image: url(../img/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  background-attachment: fixed;
+}
+
 .card{
   background-color: #272727;
 }
@@ -365,7 +374,6 @@ a:visited {
     background: transparent;
     padding: 25px;
     margin:0px,0;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     text-align: center;
 }
 

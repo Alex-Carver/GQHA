@@ -8,10 +8,12 @@ $(function () {
 
 
 $('.responsive').slick({
-  dots: true,
+  dots: false,
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
   infinite: true,
+    autoplay:true,
+  autoplaySpeed:2000,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 3,
