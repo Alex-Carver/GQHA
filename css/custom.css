@@ -117,6 +117,15 @@ h3{
   margin-top: 20px;
 }
 
+h5{
+  font-family: 'Trajan Pro', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 25px;
+  color: #EC1C24;
+  margin-top: 20px;
+}
+
 p {
   color: #fff;
   font-size: 20px;
@@ -234,6 +243,10 @@ a:visited {
   margin-top: -2px;
   padding-top: 100px;
   padding-bottom: 50px;
+}
+
+.card{
+  min-height: 580px;
 }
 
 #section-4{
@@ -564,6 +577,11 @@ h2{
         display: block;
         visibility: visible;
     }
+
+    .card {
+    min-height: 654px;
+    text-align: left;
+}
 }
 
 
@@ -622,6 +640,10 @@ p.lead-3 {
 
 .small-table{
   padding-left: 10px;
+}
+
+    .card {
+    text-align: left;
 }
 
 }
