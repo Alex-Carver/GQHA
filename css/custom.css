@@ -642,6 +642,9 @@ p.lead-3 {
   text-align: left;
 
 }
+.slick-dots {
+  display: none!important;
+}
 
 .small-table{
   padding-left: 10px;
@@ -707,6 +710,10 @@ p.lead-3 {
 }
 .small-table{
   padding-left: 10px;
+}
+
+.slick-dots {
+  display: none!important;
 }
 }
 
@@ -775,6 +782,10 @@ p.lead-3 {
 }
 .small-table{
   padding-left: 10px;
+}
+
+.slick-dots {
+  display: none!important;
 }
 }
 
