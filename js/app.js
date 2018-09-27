@@ -1,26 +1,46 @@
-	$(function () {
-  	$(document).scroll(function () {
-	  	var $nav = $(".fixed-top");
-	  	$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-		});
-	});
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
 
-window.onscroll = function() {
-  growShrinkLogo()
-};
 
-var Logo = document.getElementById("Logo");
-var endOfDocumentTop = 150;
-var size = 0;
 
-function growShrinkLogo() {
-var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-
-  if (size == 0 && scroll > endOfDocumentTop) {
-    Logo.className = 'smallLogo';
-    size = 1;
-  } else if(size == 1 && scroll <= endOfDocumentTop){
-    Logo.className = 'largeLogo';
-   size = 0;
-  }
-}
+$('.responsive').slick({
+  dots: true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
